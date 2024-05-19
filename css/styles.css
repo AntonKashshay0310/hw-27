@@ -1,0 +1,46 @@
+.slide__menu {
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    display: flex;
+    background-color: gray;
+    width: 20vw;
+    height: 500px;
+    color: #FFF;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateX(-95%);
+    transition: all 400ms ease-in-out;
+}
+
+.menu:hover {
+    transform: translateX(0);
+
+}
+
+.menu:hover .menu__text {
+    display: none;
+}
+
+.menu__list {
+    list-style-type: '\25CA';
+    gap: 5px;
+    margin-left: 60px;
+    margin-top: -200px;
+}
+
+.menu__item {
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.menu__item:hover {
+    color: rgb(242, 100, 11);
+
+}
+
+.menu__text {
+    writing-mode: vertical-rl;
+}
